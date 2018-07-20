@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Conceive.ClinicsActivity"
+    tools:showIn="@layout/activity_clinics"
+    android:layout_margin="10sp">
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clinic_details"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="F i n d  A  C l i n i c"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"/>
+            <SearchView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Go"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clinic_name"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/ask_for_an_appointment"
+            android:padding="5sp"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

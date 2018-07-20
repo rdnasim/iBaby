@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    android:orientation="vertical"
+    tools:context="com.example.rdnas.ibaby.Conceive.FamilyPlaningActivity">
+
+    <Button
+        android:id="@+id/clinicsButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="Clinics"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:onClick="onClickClinics"/>
+
+    <Button
+        android:id="@+id/advice_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="Advice"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:onClick="onClickAdvice"/>
+
+    <Button
+        android:id="@+id/familyPlanProductBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/family_plan_product"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:onClick="onClickFamilyPlanProduct"/>
+
+    <Button
+        android:id="@+id/coursesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="Courses"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        android:onClick="onClickCourses"/>
+
+    <Button
+        android:id="@+id/resourcesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="Resources"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:onClick="onClickResources"/>
+
+
+</LinearLayout>

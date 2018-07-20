@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rdnas.ibaby">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".CatagoryActivity" />
+        <activity android:name=".Conceive.ConceiveActivity" />
+        <activity android:name=".Parent_Baby_Care.ParentBabyCareActivity" />
+        <activity android:name=".Pregnant.PregnantActivity" />
+        <activity android:name=".Conceive.FamilyPlaningActivity" />
+        <activity
+            android:name=".Conceive.ClinicsActivity"
+            android:label="@string/title_activity_clinics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Conceive.AdviceActivity.AdviceActivity"
+            android:label="@string/title_activity_advice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Conceive.AdviceActivity.ContraceActivity" />
+        <activity android:name=".Conceive.AdviceActivity.SexTransActivity" />
+        <activity android:name=".Conceive.AdviceActivity.PregnancyActivity" />
+        <activity android:name=".Conceive.AdviceActivity.AbortionActivity" />
+        <activity
+            android:name=".Conceive.AdviceActivity.KeepingSafeActivity"
+            android:label="@string/title_activity_keeping_safe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Conceive.AdviceActivity.PeriodsActivity" />
+        <activity android:name=".Conceive.AdviceActivity.SexualityEduActivity" />
+        <activity android:name=".Conceive.MedicineDocHosActivity" />
+        <activity android:name=".Conceive.HealthyFoodActivity" />
+        <activity android:name=".Pregnant.PregnancyCalculatorActivity" />
+        <activity android:name=".Pregnant.PregnanacyWeightCalActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".Conceive.AdviceActivity.CoursesActivity" />
+        <activity android:name=".Conceive.AdviceActivity.ResourcesActivity" />
+        <activity
+            android:name=".MidwifeServiceActivity"
+            android:label="@string/title_activity_midwife_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
