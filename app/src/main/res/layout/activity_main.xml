@@ -89,7 +89,7 @@
     <Button
         android:id="@+id/logIn"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:background="@mipmap/login"
         android:onClick="onClickLogIn" />
 
@@ -106,7 +106,7 @@
     <Button
         android:id="@+id/sign_up_Btn"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:background="@mipmap/sign"
         android:onClick="onClickSignUp" />
 
