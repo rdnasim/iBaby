@@ -4,200 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context="com.example.rdnas.ibaby.Conceive.ConceiveActivity">
 
-    <Button
-        android:id="@+id/familyPlanBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/family_planing"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry"
-        android:onClick="onClickFamilyPlan"/>
 
 
-    <Button
-        android:id="@+id/ovulaSymtomsBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/ovulation_symptoms"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
 
-    <Button
-        android:id="@+id/gettingPregBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/getting_pregnancy"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
 
-    <Button
-        android:id="@+id/fertilityBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/fertility_conditions_treatment"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
+        <ImageButton
+            android:id="@+id/familyPlanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/family_plannig"
+            android:onClick="onClickFamilyPlan" />
 
-    <Button
-        android:id="@+id/infertilityBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/infertility_trouble_conceiving"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
 
-    <Button
-        android:id="@+id/healtyFoodBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/healty_food"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry"
-        android:onClick="onClickHealthyFood"/>
+        <ImageButton
+            android:id="@+id/ovulaSymtomsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/avulation_symptoms2" />
 
-    <Button
-        android:id="@+id/productBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/product_and_accessories"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry"
-        android:onClick="onClickProductAcces"/>
+        <ImageButton
+            android:id="@+id/gettingPregBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/greeting_pregnancy" />
 
-    <Button
-        android:id="@+id/medicineBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/medicine_doctor_and_hospital"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry"
-        android:onClick="onClickMediDocHos"/>
+        <ImageButton
+            android:id="@+id/fertilityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fertilityconditiontertment" />
 
-    <Button
-        android:id="@+id/tipsSuggestionBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/tips_or_suggestion"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
+        <ImageButton
+            android:id="@+id/infertilityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/infertility"/>
 
-    <Button
-        android:id="@+id/bloodBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/blood"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
+        <ImageButton
+            android:id="@+id/healtyFoodBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/healthy"
+            android:onClick="onClickHealthyFood" />
 
-    <Button
-        android:id="@+id/anyQuestion"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:paddingStart="5sp"
-        android:text="@string/any_questions"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        tools:ignore="RtlSymmetry" />
+        <ImageButton
+            android:id="@+id/productBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/product_accessoris"
+            android:onClick="onClickProductAcces" />
+
+        <ImageButton
+            android:id="@+id/medicineBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/medicine_doctor"
+            android:onClick="onClickMediDocHos" />
+
+        <ImageButton
+            android:id="@+id/tipsSuggestionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tips" />
+
+        <ImageButton
+            android:id="@+id/bloodBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blood" />
+
+        <ImageButton
+            android:id="@+id/anyQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/any_quation" />
+
+
+
 
 
 </LinearLayout>

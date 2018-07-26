@@ -50,10 +50,7 @@
         <activity android:name=".ProductActivity" />
         <activity android:name=".Conceive.AdviceActivity.CoursesActivity" />
         <activity android:name=".Conceive.AdviceActivity.ResourcesActivity" />
-        <activity
-            android:name=".MidwifeServiceActivity"
-            android:label="@string/title_activity_midwife_service"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MidWifeService"></activity>
     </application>
 
 </manifest>

@@ -16,6 +16,7 @@ public class CatagoryActivity extends AppCompatActivity {
     private ImageButton pregnantBtn;
     private ImageButton parentBabyCareBtn;
     private ImageButton productAccBtn;
+    private ImageButton midWifeService;
 
 
     @Override
@@ -45,6 +46,12 @@ public class CatagoryActivity extends AppCompatActivity {
     public void onClickProductAcces(View view) {
         Intent intent = new Intent(this, ProductActivity.class);
         productAccBtn = findViewById(R.id.babyProductAccBtn);
+        startActivity(intent);
+    }
+
+    public void onClickMidWife(View view) {
+        Intent intent = new Intent(this, MidWifeService.class);
+        midWifeService = findViewById(R.id.midwifeServiceBtn);
         startActivity(intent);
     }
 }

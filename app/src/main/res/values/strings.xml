@@ -150,6 +150,27 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-
+    <string name="parentaCare">"Free consultation visits with tour of birth center suites \n"
+    " Initial prenatal visit, including a full medical history, nutrition and lifestyle counseling, and physical exam.\n"
+    " Hour-long visits allowing time for thorough education, informed decision making, and connection between midwife and client.\n"
+    " Access to labs, testing and ultrasound\n"
+    " Availability to clients day and night for questions/concerns\n"
+    " Medical consultation and referral available as necessary\n"
+    " Resources for childbirth education, massage, chiropractic and acupuncture"</string>
+    <string name="birthAttendance">"Birth Center or home birth services available\n"
+        "Water birth options at Birth Center and in home\n"
+        "24 hour/day, 7 days/week availability\n"
+        "Medical consultation and referral available as necessary\n"
+        "Continued labor support by midwife if hospital transfer is necessary"
+    </string>
+    <string name="postpartum">
+        "Continuous care and support from midwives in immediate postpartum\n"
+        "Complete physical exam of newborn, including newborn medication administration\n"
+        "Breastfeeding support\n"
+        "Postpartum education and take-home package\n"
+        "24/7 availablilty to you and your newborn in the days and weeks following birth\n"
+        "Postpartum visit at your home on Day 2, follow-up office visits on Day 10, Week 3 and Week 6\n"
+        "Well-newborn care, including newborn metabolic screens, congenital heart defect screen, and hearing screen.\n"
+    </string>
 
 </resources>
