@@ -43,18 +43,26 @@
         android:gravity="center"
         android:textColor="@color/colorPrimary"/>
     <EditText
+        android:id="@+id/edtEmailAddressLog"
         android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
         android:layout_height="wrap_content"
         android:hint="  Email Address :"/>
     <EditText
+        android:id="@+id/edtPasswordLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="  Password :"/>
     <EditText
+        android:id="@+id/edtFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="  Full Name:"/>
+        android:hint="  Full Name:"
+        android:inputType="textPersonName"/>
     <EditText
+        android:inputType="textPersonName"
+        android:id="@+id/edtCommunityname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="  Community Username :"/>

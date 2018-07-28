@@ -2,18 +2,37 @@ package com.example.rdnas.ibaby;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Calendar;
 
 public class SignUpActivity extends AppCompatActivity {
+
+    private EditText edtemailAddress;
+    private EditText edtPassword;
+    private EditText edtFullName;
+    private EditText edtCommunityname;
+
+
+    private FirebaseAuth firebaseAuth;
+
+
     private DatePicker datePicker;
     private Calendar calendar;
     private TextView dateView;
@@ -26,8 +45,18 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+
+        edtemailAddress = findViewById(R.id.edtEmailAddressLog);
+        edtPassword = findViewById(R.id.edtPasswordLog);
+        edtFullName = findViewById(R.id.edtFullName);
+        edtCommunityname = findViewById(R.id.edtCommunityname);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+
         dateView = findViewById(R.id.showDate);
-        dateView2 =findViewById(R.id.showDate2);
+        dateView2 = findViewById(R.id.showDate2);
         calendar = Calendar.getInstance();
         year = calendar.get(Calendar.YEAR);
 
@@ -89,16 +118,41 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void onClickRegister(View view) {
-        Intent intent =new Intent(this, MainActivity.class);
+
+
+        final ProgressDialog progressDialog = ProgressDialog.show(SignUpActivity.this, "Please wait...", "Processing...", true);
+        (firebaseAuth.createUserWithEmailAndPassword(edtemailAddress.getText().toString(), edtPassword.getText().toString())).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                progressDialog.dismiss();
+
+                if (task.isSuccessful()) {
+                    Toast.makeText(SignUpActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    intent.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
+                    startActivity(intent);
+                }
+
+                else {
+                    Log.e("ERROR", task.getException().getMessage());
+                    Toast.makeText(SignUpActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
+
+
+        /*Intent intent = new Intent(this, MainActivity.class);
         register = findViewById(R.id.register);
         startActivity(intent);
         Toast.makeText(getApplicationContext(), "Register Complete.",
                 Toast.LENGTH_SHORT)
-                .show();
+                .show();*/
     }
 
     public void loginRegister(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CatagoryActivity.class);
         logInRegister = findViewById(R.id.login_Register);
         startActivity(intent);
         Toast.makeText(getApplicationContext(), "Please LogIn First",

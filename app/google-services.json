@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "304609473285",
+    "firebase_url": "https://ibaby-2c4ed.firebaseio.com",
+    "project_id": "ibaby-2c4ed",
+    "storage_bucket": "ibaby-2c4ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304609473285:android:e7587f112766868d",
+        "android_client_info": {
+          "package_name": "com.example.rdnas.ibaby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304609473285-ivqh9su6pubeaih7oubom401j7b57se3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAGc-NrKYDQ447E0GDsHkkRaoR8DML8fQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

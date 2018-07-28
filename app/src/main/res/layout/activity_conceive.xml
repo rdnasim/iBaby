@@ -4,98 +4,245 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
+    android:padding="8dp"
     tools:context="com.example.rdnas.ibaby.Conceive.ConceiveActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-
-
-        <ImageButton
-            android:id="@+id/familyPlanBtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/family_plannig"
-            android:onClick="onClickFamilyPlan" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_family_planning" />
+
+                <Button
+                    android:id="@+id/familyPlanBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onClickFamilyPlan"
+                    android:text="Family Planning" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_evolotion_symtom" />
+
+                <Button
+                    android:id="@+id/ovulaSymtomsBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Ovulating Symptoms" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_greeding_pregnency" />
+
+                <Button
+                    android:id="@+id/gettingPregBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Ovulating Symptoms" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_fertility_condition_tretment" />
+
+                <Button
+                    android:id="@+id/fertilityBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Fertility Condition - Treatment" />
+            </LinearLayout>
 
 
-        <ImageButton
-            android:id="@+id/ovulaSymtomsBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/avulation_symptoms2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/gettingPregBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/greeting_pregnancy" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_family_planning" />
 
-        <ImageButton
-            android:id="@+id/fertilityBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/fertilityconditiontertment" />
+                <Button
+                    android:id="@+id/healtyFoodBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onClickHealthyFood"
+                    android:text="Healthy Food" />
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/infertilityBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/infertility"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/healtyFoodBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/healthy"
-            android:onClick="onClickHealthyFood" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_product_accessories" />
 
-        <ImageButton
-            android:id="@+id/productBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/product_accessoris"
-            android:onClick="onClickProductAcces" />
+                <Button
+                    android:id="@+id/productBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onClickProductAcces"
+                    android:text="Product And Accessories" />
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/medicineBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/medicine_doctor"
-            android:onClick="onClickMediDocHos" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/tipsSuggestionBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/tips" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_e_medicin" />
 
-        <ImageButton
-            android:id="@+id/bloodBtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/blood" />
+                <Button
+                    android:id="@+id/medicineBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onClickMediDocHos"
+                    android:text="Medicine, Doctor and Hospital" />
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/anyQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/any_quation" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_madicine_doctor_hospital" />
 
+                <Button
+                    android:id="@+id/tipsSuggestionBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Tips or Suggestion" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_blood" />
+
+                <Button
+                    android:id="@+id/bloodBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Blood" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_any_question" />
+
+                <Button
+                    android:id="@+id/anyQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="Any Question" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

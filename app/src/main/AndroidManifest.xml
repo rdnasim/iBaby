@@ -50,7 +50,11 @@
         <activity android:name=".ProductActivity" />
         <activity android:name=".Conceive.AdviceActivity.CoursesActivity" />
         <activity android:name=".Conceive.AdviceActivity.ResourcesActivity" />
-        <activity android:name=".MidWifeService"></activity>
+        <activity android:name=".MidWifeService" />
+        <activity android:name=".DoctorHospital.DoctorHospitalActivity" />
+        <activity android:name=".DoctorHospital.EDoctorActivity" />
+        <activity android:name=".DoctorHospital.EHospitalActivity" />
+        <activity android:name=".EMedicineActivity"></activity>
     </application>
 
 </manifest>

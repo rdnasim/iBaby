@@ -172,5 +172,7 @@
         "Postpartum visit at your home on Day 2, follow-up office visits on Day 10, Week 3 and Week 6\n"
         "Well-newborn care, including newborn metabolic screens, congenital heart defect screen, and hearing screen.\n"
     </string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
 </resources>

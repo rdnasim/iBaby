@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical"
-    android:paddingBottom="2sp"
-    android:paddingLeft="2sp"
-    android:paddingRight="2sp"
+    android:id="@+id/drawerlayou"
     tools:context="com.example.rdnas.ibaby.CatagoryActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="2sp"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@mipmap/tring_to_concieve"
-                android:onClick="onClickConceive" />
+                android:onClick="onClickConceive"
+                android:contentDescription="TODO" />
 
             <ImageButton
                 android:id="@+id/pregnantBtn"
@@ -36,7 +37,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@mipmap/pregnant"
-                android:onClick="onClickPregnant" />
+                android:onClick="onClickPregnant"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
 
@@ -77,14 +79,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@mipmap/doctor" />
+                android:background="@mipmap/doctor"
+                android:onClick="onCLickDocHospital"/>
 
             <ImageButton
                 android:id="@+id/eMedicineBtn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@mipmap/medicine" />
+                android:background="@mipmap/medicine"
+                android:onClick="onClickeMedicine"/>
 
         </LinearLayout>
 
@@ -115,4 +119,14 @@
     </LinearLayout>
 
 
-</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

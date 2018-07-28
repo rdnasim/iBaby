@@ -4,214 +4,308 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/background"
     tools:context="com.example.rdnas.ibaby.Parent_Baby_Care.ParentBabyCareActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/isItNormalBtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/is_it_normal"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/nutritionWeightBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/nutrition_and_weight"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/babyNameBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/baby_names"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/medicineGuideBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/medicine_guide"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/babySleepFitnessBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/baby_sleep_and_fitness"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/sleepFeedSchedulBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/sleep_and_feeding_schedules"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/vaccineSchedulerBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/vaccine_scheduler"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/babyProblemBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/baby_problem"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/babyTrainingBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/baby_training"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
-        <Button
-            android:id="@+id/babyCheckUpBtn"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/well_baby_checkups"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:paddingStart="5sp"
-            tools:ignore="RtlSymmetry" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_parental_care" />
 
-        <Button
-            android:id="@+id/babyDoctorHospitalBtn"
+            <Button
+                android:id="@+id/isItNormalBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/is_it_normal" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/medicine_doctor_and_hospital"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp" />
-        <Button
-            android:id="@+id/babyProductBtn"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_nutrition_weight" />
+
+            <Button
+                android:id="@+id/nutritionWeightBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/nutrition_and_weight" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-condensed"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/products_and_gear"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp" />
-        <Button
-            android:id="@+id/anyQuestion"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_baby_names" />
+
+            <Button
+                android:id="@+id/babyNameBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/baby_names" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-condensed"
-            android:gravity="center"
-            android:paddingLeft="5sp"
-            android:text="@string/any_questions"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="15sp" />
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_e_medicin" />
+
+            <Button
+                android:id="@+id/medicineGuideBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/medicine_guide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_sleep_feeding_chedules" />
+
+            <Button
+                android:id="@+id/babySleepFitnessBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/baby_sleep_and_fitness" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_evolotion_symtom" />
+
+            <Button
+                android:id="@+id/sleepFeedSchedulBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/sleep_and_feeding_schedules" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_vaccin_routine" />
+
+            <Button
+                android:id="@+id/vaccineSchedulerBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/vaccine_scheduler" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_problem" />
+
+            <Button
+                android:id="@+id/babyProblemBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/baby_problem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_baby_training" />
+
+            <Button
+                android:id="@+id/babyTrainingBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/baby_training" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_well_baby_checkups" />
+
+            <Button
+                android:id="@+id/babyCheckUpBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/well_baby_checkups" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_madicine_doctor_hospital" />
+
+            <Button
+                android:id="@+id/babyDoctorHospitalBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/medicine_doctor_and_hospital" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_product_accessories" />
+
+            <Button
+                android:id="@+id/babyProductBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/products_and_gear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bt_gory"
+                android:src="@drawable/ic_any_question" />
+
+            <Button
+                android:id="@+id/anyQuestion"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/bt_gory"
+                android:text="@string/any_questions" />
+        </LinearLayout>
 
 
 
     </LinearLayout>
+</ScrollView>
+
+
+
+</LinearLayout>

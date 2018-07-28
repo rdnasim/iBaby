@@ -4,180 +4,286 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/background"
     tools:context="com.example.rdnas.ibaby.Pregnant.PregnantActivity">
 
-    <Button
-        android:id="@+id/prenatalCareBtn"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/prenatal_care_and_tests"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/pregnancySafetyBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/pregnancy_safety"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/pregnancyCalculatortBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/pregnancy_calculator"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        android:onClick="onCLickPregnancyCalcu"/>
-    <Button
-        android:id="@+id/vaccineRoutineBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/vaccine_routine"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/dueDateCalculatorBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/due_date_calculator"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/toDoListBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/pregnancy_to_do_list"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/pregnancyWeightCalBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/pregnancy_weight_calculator"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp"
-        android:onClick="onClickPregnancyWeightCal"/>
-    <Button
-        android:id="@+id/productGearBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/products_and_gear"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/medicineBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/medicine_doctor_and_hospital"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/tipsSuggestionBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/tips_or_suggestion"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/bloodBtn"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/blood"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
-    <Button
-        android:id="@+id/anyQuestion"
-        android:layout_width="match_parent"
-        android:layout_height="30sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:paddingLeft="5sp"
-        android:text="@string/any_questions"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="15sp" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_parental_care" />
+
+                <Button
+                    android:id="@+id/prenatalCareBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/prenatal_care_and_tests" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_greeding_pregnency" />
+
+                <Button
+                    android:id="@+id/pregnancySafetyBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/pregnancy_safety" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_calendar_calculator" />
+
+                <Button
+                    android:id="@+id/pregnancyCalculatortBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onCLickPregnancyCalcu"
+                    android:text="@string/pregnancy_calculator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_vaccin_routine" />
+
+                <Button
+                    android:id="@+id/vaccineRoutineBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/vaccine_routine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_due_date_calculator" />
+
+                <Button
+                    android:id="@+id/dueDateCalculatorBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/due_date_calculator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_vaccin_routine" />
+
+                <Button
+                    android:id="@+id/toDoListBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/pregnancy_to_do_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_nutrition_weight" />
+
+                <Button
+                    android:id="@+id/pregnancyWeightCalBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:onClick="onClickPregnancyWeightCal"
+                    android:text="@string/pregnancy_weight_calculator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_product_accessories" />
+
+                <Button
+                    android:id="@+id/productGearBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/products_and_gear" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_madicine_doctor_hospital" />
+
+                <Button
+                    android:id="@+id/medicineBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/medicine_doctor_and_hospital" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_baby_training" />
+
+                <Button
+                    android:id="@+id/tipsSuggestionBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/tips_or_suggestion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_blood" />
+
+                <Button
+                    android:id="@+id/bloodBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/blood" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_gory"
+                    android:src="@drawable/ic_any_question" />
+
+                <Button
+                    android:id="@+id/anyQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bt_gory"
+                    android:text="@string/any_questions" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

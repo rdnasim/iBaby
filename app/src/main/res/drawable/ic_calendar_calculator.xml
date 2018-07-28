@@ -1,0 +1,5 @@
+<vector android:alpha="0.99" android:autoMirrored="true"
+    android:height="24dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#000" android:name="Forma 1" android:pathData="m452 80c11 0 20 9 20 20v48h-432v-48c0 -11 9 -20 20 -20h24v40h40v-40h264v40h40v-40zm-376 150v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm-320 80v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm-320 80v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm80 0v40h40v-40zm156 -202v264c0 11 -9 20 -20 20h-392c-11 0 -20 -9 -20 -20v-264zm-388 -188v40h-24c-33.1 0 -60 26.9 -60 60v352c0 33.1 26.9 60 60 60h392c33.1 0 60 -26.9 60 -60v-352c0 -33.1 -26.9 -60 -60 -60h-24v-40h-40v40h-264v-40z"/>
+</vector>

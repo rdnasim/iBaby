@@ -12,10 +12,10 @@ import com.example.rdnas.ibaby.R;
 
 public class ConceiveActivity extends AppCompatActivity {
 
-    private ImageButton familyPlan;
-    private ImageButton productAcces;
-    private ImageButton healthyFood;
-    private ImageButton mediDocHos;
+    private Button familyPlan;
+    private Button productAcces;
+    private Button healthyFood;
+    private Button mediDocHos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
