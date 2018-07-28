@@ -54,7 +54,9 @@
         <activity android:name=".DoctorHospital.DoctorHospitalActivity" />
         <activity android:name=".DoctorHospital.EDoctorActivity" />
         <activity android:name=".DoctorHospital.EHospitalActivity" />
-        <activity android:name=".EMedicineActivity"></activity>
+        <activity android:name=".EMedicineActivity" />
+        <activity android:name=".UrgentHelp.UrgentHelpActivity" />
+        <activity android:name=".UrgentHelp.AmbulanceActivity"></activity>
     </application>
 
 </manifest>

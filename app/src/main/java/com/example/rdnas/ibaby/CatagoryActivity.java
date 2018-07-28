@@ -13,6 +13,7 @@ import com.example.rdnas.ibaby.Conceive.ConceiveActivity;
 import com.example.rdnas.ibaby.DoctorHospital.DoctorHospitalActivity;
 import com.example.rdnas.ibaby.Parent_Baby_Care.ParentBabyCareActivity;
 import com.example.rdnas.ibaby.Pregnant.PregnantActivity;
+import com.example.rdnas.ibaby.UrgentHelp.UrgentHelpActivity;
 
 public class CatagoryActivity extends AppCompatActivity {
     private ImageButton conceiveBtn;
@@ -22,6 +23,7 @@ public class CatagoryActivity extends AppCompatActivity {
     private ImageButton midWifeService;
     private ImageButton docHospitalBtn;
     private ImageButton eMedicineBtn;
+    private ImageButton urgentHelpBtn;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -92,6 +94,12 @@ public class CatagoryActivity extends AppCompatActivity {
     public void onClickeMedicine(View view) {
         Intent intent = new Intent(this, EMedicineActivity.class);
         eMedicineBtn = findViewById(R.id.eMedicineBtn);
+        startActivity(intent);
+    }
+
+    public void onClickUrgentHelp(View view) {
+        Intent intent = new Intent(this, UrgentHelpActivity.class);
+        urgentHelpBtn = findViewById(R.id.urgentHelpBtn);
         startActivity(intent);
     }
 }
